@@ -1213,7 +1213,7 @@ function creatura.register_mob(name, def)
 	local hitbox = {-box_width, 0, -box_width, box_width, box_height, box_width}
 
 	def.initial_properties.physical = def.initial_properties.physical or true
-	def.collide_with_objects = def.collide_with_objects or false
+	def.initial_properties.collide_with_objects = def.initial_properties.collide_with_objects or false
 	def.visual = "mesh"
 	def.mesh = def.mesh or (def.meshes and def.meshes[1])
 	def.makes_footstep_sound = def.makes_footstep_sound or false
