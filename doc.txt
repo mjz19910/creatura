@@ -37,7 +37,7 @@ Mob Definition uses almost all entity definition params
 
 	utility_stack = {
 		-- Every second, all utilities in the stack are evaluated
-		-- Whichever utilitiy's get_score function returns the highest number will be executed
+		-- Whichever utility's get_score function returns the highest number will be executed
 		-- If multiple utilities have the same score, the one with the highest index is executed
 		[1] = {
 			`utility` -- name of utility to evaluate
@@ -220,7 +220,7 @@ Global Mob API
 * `creatura.basic_punch_func(self, puncher, time_from_last_punch, tool_capabilities, direction, damage)`
 	* Deals damage
 	* Applies knockback
-	* Visualy and audibly indicates damage
+	* Visually and audibly indicates damage
 
 Pathfinding
 -----------
@@ -248,7 +248,7 @@ The maximum amount of time the pathfinder can spend per-step (in microseconds) c
 Spawning
 --------
 
-NOTE: Globalstep spawning from early versions of the API likely won't recieve much/any support going forward. Use ABM Spawning instead.
+NOTE: Globalstep spawning from early versions of the API likely won't receive much/any support going forward. Use ABM Spawning instead.
 
 * `creatura.register_abm_spawn(name, def)`
 	* `name` of the mob to spawn
